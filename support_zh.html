@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人际大脑 - 支持中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        
+        h2 {
+            color: #1d1d1f;
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1d1d1f;
+            font-size: 1.4em;
+            margin: 50px 0 15px 0;
+        }
+        
+        h3:first-of-type {
+            margin-top: 25px;
+        }
+        
+        h4 {
+            color: #1d1d1f;
+            font-size: 1.2em;
+            margin: 25px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .feature-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #007AFF;
+        }
+        
+        .contact-section {
+            background-color: #f0f8ff;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-email {
+            font-size: 1.2em;
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+        
+        .privacy-link {
+            display: inline-block;
+            background-color: #007AFF;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .privacy-link:hover {
+            background-color: #0056b3;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background-color: #007AFF;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .highlight-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .nav-tab {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 12px 24px;
+            margin: 5px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .nav-tab:hover {
+            background-color: #007AFF;
+            color: white;
+            border-color: #007AFF;
+        }
+        
+        .nav-tab.active {
+            background-color: #007AFF;
+            color: white;
+            border-color: #007AFF;
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            h2 {
+                font-size: 1.6em;
+            }
+            
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .nav-tab {
+                margin: 2px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>人际大脑 使用教程</h1>
+            <p class="subtitle">为你的每一段人际关系建立智能备忘录，用长期主义经营你的人际网络。</p>
+        </div>
+
+        <!-- 使用教程内容 -->
+        <div id="tutorial" class="section active">
+
+            <h3>🔗 怎样记录人际关系</h3>
+            <div class="feature-card">
+                <p>人际大脑可以帮助你记录人际关系里的方方面面：</p>
+                <ul>
+                    <li><strong>"关系"页面</strong>可以记录人际关系里的"熟人"和"圈子"</li>
+                    <li><strong>"笔记"页面</strong>可以记录人际互动的细节，也可以记录对于人际互动的思考。</li>
+                </ul>
+                <p>清晰的结构可以帮助轻松梳理各类人际关系。</p>
+            </div>
+
+            <h3>📝 关系备忘录</h3>
+            <div class="feature-card">
+                <p>人际大脑里提供笔记功能，你可以在笔记里记录你的各种人际互动的细节。积累一定数量的笔记之后，人际大脑就能可以你的每一个熟人生成一个"关系备忘录"。告诉你你们有过哪些互动，聊过哪些共同话题。</p>
+            </div>
+
+            <h3>🏗️ 人际经验库</h3>
+            <div class="feature-card">
+                <p>人际经验库里包含了针对不同人际关系场景下的不同经验，这些经验可以结合记录的笔记，给你提供针对性的建议。</p>
+                
+                <p>应用内置的两条人际经验，一条帮助你回顾关系网络里的新朋友老朋友，让你不错过任何联络朋友增进关系的时机；另一条帮助你收集社交话题，让你遇到生人的时候，不会因为没有话题而冷场。</p>
+                
+                <p>你可以生成自己的专属经验，帮助自己回顾自己的人际互动；也可以从搜索下载专家提供的各类经验（陆续上传中）。</p>
+            </div>
+
+            <h3>📊 体验模式</h3>
+            <div class="feature-card">
+                <p>人际大脑内置了了体验模式。进入体验模式之后，你将看到如何记录人际笔记，如何使用使用关系备忘录以及人际经验库。</p>
+            </div>
+        </div>
+
+        <!-- 联系方式部分 -->
+        <div id="contact" class="section">
+            <h2>📞 联系方式</h2>
+            
+            <div class="contact-section">
+                <h3>💬 需要帮助？</h3>
+                <p>如果您在使用人际大脑时遇到任何问题，或有任何建议和反馈，我们很乐意为您提供帮助！</p>
+                
+                <h4>📧 电子邮件支持</h4>
+                <p>请发送邮件至我们的支持邮箱：</p>
+                <a href="mailto:chaosun99115@gmail.com" class="contact-email">chaosun99115@gmail.com</a>
+                
+                <p style="margin-top: 20px; color: #666;">
+                    我们通常会在24小时内回复您的邮件。请详细描述您遇到的问题，这样我们能够更好地帮助您。
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔧 常见问题类型</h3>
+                <ul>
+                    <li>应用功能使用问题</li>
+                    <li>数据同步相关问题</li>
+                    <li>界面操作指导</li>
+                    <li>功能建议和反馈</li>
+                    <li>隐私和安全问题</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h3>💡 提交反馈时的建议</h3>
+                <ul>
+                    <li>请详细描述您遇到的问题或建议</li>
+                    <li>如果可能，请提供您的设备型号和iOS版本</li>
+                    <li>对于功能建议，请说明您的使用场景</li>
+                    <li>我们重视每一位用户的反馈，会认真考虑您的建议</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 隐私政策部分 -->
+        <div id="privacy" class="section">
+            <h2>🔒 隐私政策</h2>
+            
+            <div class="highlight-box">
+                <h3>🛡️ 隐私优先设计</h3>
+                <p><strong>重要提示：</strong>人际大脑采用纯本地运行模式，不会收集、传输或存储您的任何个人信息到我们的服务器上。</p>
+            </div>
+
+            <h3>📱 数据存储方式</h3>
+            <ul>
+                <li><strong>本地存储：</strong>所有数据都存储在您的设备本地，使用iOS Core Data</li>
+                <li><strong>数据加密：</strong>您的数据使用iOS安全功能进行加密</li>
+                <li><strong>完全控制：</strong>您对数据拥有完全控制权</li>
+                <li><strong>可选同步：</strong>可选择使用iCloud在设备间同步数据</li>
+            </ul>
+
+            <h3>🚫 我们不收集的信息</h3>
+            <ul>
+                <li>您的联系信息</li>
+                <li>您的人际笔记和互动记录</li>
+                <li>您的关系数据</li>
+                <li>您的对话话题</li>
+                <li>您的个人偏好</li>
+                <li>任何其他您在应用中输入的信息</li>
+            </ul>
+
+            <h3>🔐 数据安全</h3>
+            <ul>
+                <li>所有数据都使用iOS加密标准进行加密</li>
+                <li>您的数据受到设备安全功能的保护</li>
+                <li>我们不运营任何存储您数据的服务器</li>
+                <li>您的数据始终保留在您的设备上</li>
+            </ul>
+
+            <h3>📋 完整隐私政策</h3>
+            <p>如需查看完整的隐私政策，请点击下方链接：</p>
+            <a href="app-privacy_zh.html" class="privacy-link" target="_blank">查看完整隐私政策</a>
+
+            <div class="feature-card">
+                <h3>✅ 您的权利</h3>
+                <ul>
+                    <li><strong>完全所有权：</strong>您的所有数据都属于您</li>
+                    <li><strong>本地控制：</strong>您可以随时访问、修改或删除您的数据</li>
+                    <li><strong>无需账户：</strong>无需注册或创建账户</li>
+                    <li><strong>完全隐私：</strong>除非您选择iCloud同步，否则您的数据永远不会离开您的设备</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // 隐藏所有部分
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // 移除所有标签的active类
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // 显示选中的部分
+            document.getElementById(sectionId).classList.add('active');
+            
+            // 激活对应的标签
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
