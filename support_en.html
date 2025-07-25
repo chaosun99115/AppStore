@@ -148,43 +148,7 @@
             margin: 20px 0;
         }
         
-        .nav-tabs {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
-        
-        .nav-tab {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            padding: 12px 24px;
-            margin: 5px;
-            text-decoration: none;
-            color: #333;
-            border-radius: 8px;
-            transition: all 0.3s;
-        }
-        
-        .nav-tab:hover {
-            background-color: #007AFF;
-            color: white;
-            border-color: #007AFF;
-        }
-        
-        .nav-tab.active {
-            background-color: #007AFF;
-            color: white;
-            border-color: #007AFF;
-        }
-        
-        .section {
-            display: none;
-        }
-        
-        .section.active {
-            display: block;
-        }
+
         
         @media (max-width: 768px) {
             body {
@@ -203,13 +167,7 @@
                 font-size: 1.6em;
             }
             
-            .nav-tabs {
-                flex-direction: column;
-            }
-            
-            .nav-tab {
-                margin: 2px 0;
-            }
+
         }
     </style>
 </head>
@@ -220,17 +178,10 @@
             <p class="subtitle">Build intelligent relationship memos for every connection in your life, and nurture your social network with a long-term perspective.</p>
         </div>
 
-        <!-- Navigation Tabs -->
-        <div class="nav-tabs">
-            <a href="#" class="nav-tab active" onclick="showSection('tutorial')">User Guide</a>
-            <a href="#" class="nav-tab" onclick="showSection('contact')">Contact</a>
-            <a href="#" class="nav-tab" onclick="showSection('privacy')">Privacy</a>
-        </div>
-
         <!-- User Guide Content -->
-        <div id="tutorial" class="section active">
+        <div id="tutorial">
 
-            <h3>🔗 How to Record Relationships</h3>
+            <h3>🔗 How to Note Down Details of Relationships</h3>
             <div class="feature-card">
                 <p>Relate helps you record every aspect of your relationships:</p>
                 <ul>
@@ -240,32 +191,12 @@
                 <p>Clear structure helps you easily organize various types of relationships.</p>
             </div>
 
-            <h3>📝 Relate Recap</h3>
+            <h3>📝 Relate Recap Feature</h3>
             <div class="feature-card">
                 <p>Jot down notes after meeting someone new or catching up with an old friend. Relate transforms these notes into personalized summaries for each contact, giving you instant recall to your shared history and conversation topics. Walk into any interaction feeling prepared and genuinely connected.</p>
             </div>
 
-            <h3>💬 How to Build "Conversation Topic Library"</h3>
-            <div class="feature-card">
-                <h4><span class="step-number">1</span>Review Topics</h4>
-                <p>Click the "Relate Brain" icon at the bottom, then click "Review recent conversation topics" to see a list of topics worth revisiting.</p>
-                
-                <h4><span class="step-number">2</span>Collect Topics</h4>
-                <p>At the bottom of the topic review page, there's a quick entry for "Collect Topics" where you can record new topics anytime and view/manage them in the "Topic Library" section of the Notes page.</p>
-            </div>
-
-            <h3>⏰ How to Get "Relationship Reminders"</h3>
-            <div class="feature-card">
-                <h4>Connection Reminders</h4>
-                <p>Click the "Relate Brain" icon at the bottom, then click "Which friends are good to reach out to recently" to get recommendations for new and old friends suitable for recent contact, ensuring you don't miss opportunities to maintain and expand your relationships in your busy schedule.</p>
-            </div>
-
-            <h3>📊 Demo Mode</h3>
-            <div class="feature-card">
-                <p>Relate features a demo mode that shows you about how to taking notes and explore Relate Recap and the Relate Card—perfect for getting started right away.</p>
-            </div>
-
-            <h3>🏗️ Relate Cards</h3>
+            <h3>🏗️ Relate Cards Feature</h3>
             <div class="feature-card">
                 <p>Each Relate Card contain targeted insights for various relationship scenarios, helping you reflect on your unique experiences and navigate challenging relationships.</p>
                 
@@ -273,118 +204,15 @@
                 
                 <p>You can also create your own custom Relate Card for your unique situations, or explore our curated collection from Relate Card Library.</p>
             </div>
-        </div>
 
-        <!-- Contact Section -->
-        <div id="contact" class="section">
-            <h2>📞 Contact</h2>
-            
-            <div class="contact-section">
-                <h3>💬 Need Help?</h3>
-                <p>If you encounter any issues while using Relate, or have any suggestions and feedback, we'd be happy to help!</p>
-                
-                <h4>📧 Email Support</h4>
-                <p>Please send an email to our support email:</p>
-                <a href="mailto:chaosun99115@gmail.com" class="contact-email">chaosun99115@gmail.com</a>
-                
-                <p style="margin-top: 20px; color: #666;">
-                    We typically respond to your emails within 24 hours. Please describe the issues you're experiencing in detail so we can better assist you.
-                </p>
-            </div>
-
+            <h3>📊 Demo Mode</h3>
             <div class="feature-card">
-                <h3>🔧 Common Issue Types</h3>
-                <ul>
-                    <li>App functionality usage issues</li>
-                    <li>Data synchronization related problems</li>
-                    <li>Interface operation guidance</li>
-                    <li>Feature suggestions and feedback</li>
-                    <li>Privacy and security concerns</li>
-                </ul>
+                <p>Relate features a demo mode that shows you about how to taking notes and explore Relate Recap and the Relate Card—perfect for getting started right away.</p>
             </div>
 
-            <div class="highlight-box">
-                <h3>💡 Suggestions for Submitting Feedback</h3>
-                <ul>
-                    <li>Please describe the issues or suggestions you're experiencing in detail</li>
-                    <li>If possible, please provide your device model and iOS version</li>
-                    <li>For feature suggestions, please explain your usage scenarios</li>
-                    <li>We value feedback from every user and will carefully consider your suggestions</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Privacy Policy Section -->
-        <div id="privacy" class="section">
-            <h2>🔒 Privacy Policy</h2>
-            
-            <div class="highlight-box">
-                <h3>🛡️ Privacy-First Design</h3>
-                <p><strong>Important Note:</strong> Relate operates in pure local mode and does not collect, transmit, or store any of your personal information on our servers.</p>
-            </div>
-
-            <h3>📱 Data Storage Method</h3>
-            <ul>
-                <li><strong>Local Storage:</strong> All data is stored locally on your device using iOS Core Data</li>
-                <li><strong>Data Encryption:</strong> Your data is encrypted using iOS security features</li>
-                <li><strong>Complete Control:</strong> You have complete control over your data</li>
-                <li><strong>Optional Sync:</strong> You can choose to use iCloud to sync data between devices</li>
-            </ul>
-
-            <h3>🚫 Information We Don't Collect</h3>
-            <ul>
-                <li>Your contact information</li>
-                <li>Your interpersonal notes and interaction records</li>
-                <li>Your relationship data</li>
-                <li>Your conversation topics</li>
-                <li>Your personal preferences</li>
-                <li>Any other information you enter in the app</li>
-            </ul>
-
-            <h3>🔐 Data Security</h3>
-            <ul>
-                <li>All data is encrypted using iOS encryption standards</li>
-                <li>Your data is protected by device security features</li>
-                <li>We don't operate any servers that store your data</li>
-                <li>Your data always remains on your device</li>
-            </ul>
-
-            <h3>📋 Complete Privacy Policy</h3>
-            <p>To view the complete privacy policy, please click the link below:</p>
-            <a href="app-privacy_en.html" class="privacy-link" target="_blank">View Complete Privacy Policy</a>
-
-            <div class="feature-card">
-                <h3>✅ Your Rights</h3>
-                <ul>
-                    <li><strong>Complete Ownership:</strong> All your data belongs to you</li>
-                    <li><strong>Local Control:</strong> You can access, modify, or delete your data at any time</li>
-                    <li><strong>No Account Required:</strong> No registration or account creation needed</li>
-                    <li><strong>Complete Privacy:</strong> Unless you choose iCloud sync, your data never leaves your device</li>
-                </ul>
-            </div>
         </div>
     </div>
 
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Remove active class from all tabs
-            const tabs = document.querySelectorAll('.nav-tab');
-            tabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Show selected section
-            document.getElementById(sectionId).classList.add('active');
-            
-            // Activate corresponding tab
-            event.target.classList.add('active');
-        }
-    </script>
+
 </body>
 </html> 
